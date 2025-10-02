@@ -10,7 +10,7 @@ body {
 /* 课题组大图区域 */
 .people .group-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem; /* 可调节：Group Members 到下面第一个人的距离，可以改成 4rem, 8rem, 10rem 等 */
 }
 
 .people .group-photo {
@@ -37,7 +37,7 @@ body {
 
 /* 人员区域间隔 */
 .people .person-section {
-    margin-bottom: 8rem; /* 可调节：人员之间的间隔，可以改成 6rem, 10rem 等 */
+    margin-bottom: 6rem; /* 可调节：人员之间的间隔，可以改成 6rem, 10rem 等 */
     padding-top: 3rem; /* 添加顶部内边距 */
     border-top: 1px solid #e0e0e0; /* 添加分割线 */
 }
@@ -131,10 +131,11 @@ body {
 }
 
 .people .right h2 {
-    font-size: 2.25rem;
+    font-size: 2.5rem; /* 可调节：人名字体大小，可以改成 2rem, 3rem 等 */
     line-height: 2.5rem;
     font-weight: 700;
     color: inherit;
+    margin-bottom: 1.5rem; /* 可调节：人名到下方内容的间距，可以改成 1rem, 2rem 等 */
 }
 
 .people .description {
