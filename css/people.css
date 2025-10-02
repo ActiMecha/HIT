@@ -7,8 +7,43 @@ body {
     padding: 8rem 0;
 }
 
+/* 课题组大图区域 */
+.people .group-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.people .group-photo {
+    width: 80%; /* 可调节：课题组大图宽度，可以改成 60%, 70%, 90% 等 */
+    max-width: 1200px; /* 可调节：最大宽度 */
+    margin: 0 auto 2rem auto;
+}
+
+.people .group-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.people .group-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: inherit;
+    margin: 0;
+    padding: 1rem 0;
+}
+
+/* 人员区域间隔 */
 .people .person-section {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem; /* 可调节：人员之间的间隔，可以改成 6rem, 10rem 等 */
+    padding-top: 3rem; /* 添加顶部内边距 */
+    border-top: 1px solid #e0e0e0; /* 添加分割线 */
+}
+
+.people .person-section:first-of-type {
+    border-top: none; /* 第一个人不显示上边框 */
 }
 
 .people .person-section:last-child {
@@ -43,14 +78,17 @@ body {
 
 .people .image {
     margin-bottom: 30px;
-    width: 470px;
+    width: 350px; /* 可调节：个人照片宽度，可以改成 300px, 400px, 500px 等 */
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .people .image img {
     width: 100%;
-    height: 100%;
+    height: auto; /* 保持图片比例 */
     object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -357,6 +395,19 @@ body {
 @media (max-width: 768px) {
     .people {
         padding: 4rem 0;
+    }
+
+    .people .group-photo {
+        width: 95%;
+    }
+
+    .people .group-title {
+        font-size: 2rem;
+    }
+
+    .people .person-section {
+        margin-bottom: 5rem;
+        padding-top: 2rem;
     }
 
     .people .content {
