@@ -60,27 +60,13 @@
 
 
     <main class="people">
-        <div class="wrapper">
+        <!-- Person 1: Liuchao Jin -->
+        <div class="wrapper person-section">
             <div class="content">
                 <div class="left">
                     <div class="image">
                         <img src="images/jlc.png" alt="">
                     </div>
-
-
-                    
-                    <!-- 
-                    <div class="info">
-                        <h4>Liuchao Jin</h4>
-                        <h4>PhD Candidate</h4>
-                        <div class="titles">
-                            <p>Department of Mechanical and Automation Engineering</p>
-                            <p>The Chinese University of Hong Kong</p>
-                            <p>Shatin, Hong Kong</p>
-                        </div>
-                    </div>
-                    <p><em>Welcome to collaborate and connect!</em></p>
-                    <p><em>Schedule a meeting through my <a href="https://calendly.com/zherong/30min">Calendly</a>.</em></p> -->
                 </div>
 
                 <div class="right">
@@ -104,6 +90,30 @@
                         <a href="https://x.com/jin_liuchao">
                             <img src="images/twitter.png" alt="Twitter">
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Person 2: 示例 - 复制这个模板添加新的人 -->
+        <div class="wrapper person-section">
+            <div class="content">
+                <div class="left">
+                    <div class="image">
+                        <img src="images/person2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="right">
+                    <h2>姓名 2</h2>
+                    <div class="description">
+                        <p>这里填写第二个人的简介...</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:example@email.com">
+                            <img src="images/email.png" alt="Email">
+                        </a>
+                        <!-- 添加其他社交链接 -->
                     </div>
                 </div>
             </div>
@@ -264,8 +274,10 @@
     });
 
 
-    observer.observe(document.querySelector(".left"));
-    observer.observe(document.querySelector(".right"));
+    // 观察所有的 .left 和 .right 元素
+    document.querySelectorAll(".left, .right").forEach(item => {
+        observer.observe(item);
+    });
 
     document.querySelectorAll(".education-position, .awards").forEach(item => {
         observer.observe(item);
