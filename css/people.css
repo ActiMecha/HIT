@@ -28,7 +28,7 @@ body {
 }
 
 .people .header h2 {
-    font-size: 3.5rem; /* 可调节：标题字体大小，可以改成 3rem, 4rem 等 */
+    font-size: 2rem; /* 可调节：标题字体大小，可以改成 3rem, 4rem 等 */
     font-weight: 700;
     color: inherit;
     margin: 0;
