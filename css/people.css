@@ -7,6 +7,14 @@ body {
     padding: 8rem 0;
 }
 
+.people .person-section {
+    margin-bottom: 6rem;
+}
+
+.people .person-section:last-child {
+    margin-bottom: 0;
+}
+
 .people .content {
     display: flex;
 }
