@@ -27,8 +27,8 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.people .group-title {
-    font-size: 2.5rem;
+.people .header h2 {
+    font-size: 3.5rem; /* 可调节：标题字体大小，可以改成 3rem, 4rem 等 */
     font-weight: 700;
     color: inherit;
     margin: 0;
@@ -401,8 +401,8 @@ body {
         width: 95%;
     }
 
-    .people .group-title {
-        font-size: 2rem;
+    .people .header h2 {
+        font-size: 2.5rem;
     }
 
     .people .person-section {
