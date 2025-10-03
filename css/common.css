@@ -135,6 +135,8 @@ img {
     font-size: 1.5rem;  /* 放大了，原来是 18px，现在约 24px */
     font-weight: 600;
     color: rgba(255, 255, 255, 0.93);
+    line-height: 1;  /* 固定行高，避免位置偏移 */
+    margin: 0;  /* 移除默认 margin */
 }
 
 .navbar .nav {
