@@ -468,3 +468,103 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/* 年份导航样式 */
+.publications .wrapper {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+}
+
+.year-nav {
+    position: sticky;
+    top: 120px;  /* 距离顶部的距离，可调整 */
+    align-self: flex-start;
+    min-width: 120px;  /* 导航栏宽度，可调整 */
+    background: #f8f9fa;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.year-nav h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    color: #333;
+    text-align: center;
+}
+
+.year-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.year-nav li {
+    margin-bottom: 0.5rem;
+}
+
+.year-nav li:last-child {
+    margin-bottom: 0;
+}
+
+.year-nav a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #555;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+    font-weight: 500;
+    text-align: center;
+}
+
+.year-nav a:hover {
+    background: rgba(117, 125, 33, 0.1);
+    color: rgba(117, 125, 33, 0.9);
+}
+
+.year-nav a.active {
+    background: rgba(117, 125, 33, 0.8);
+    color: white;
+}
+
+.publications-content {
+    flex: 1;
+    min-width: 0;  /* 防止内容溢出 */
+}
+
+/* 移动端样式 */
+@media (max-width: 768px) {
+    .publications .wrapper {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .year-nav {
+        position: static;
+        min-width: auto;
+        margin-bottom: 1rem;
+    }
+
+    .year-nav h3 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .year-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .year-nav li {
+        margin-bottom: 0;
+    }
+
+    .year-nav a {
+        padding: 0.25rem 0.75rem;
+        font-size: 0.875rem;
+    }
+}
