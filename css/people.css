@@ -10,7 +10,7 @@ body {
 /* 课题组大图区域 */
 .people .group-header {
     text-align: center;
-    margin-bottom: 3rem; /* 可调节：Group Members 到下面第一个人的距离，可以改成 4rem, 8rem, 10rem 等 */
+    margin-bottom: 2rem; /* 可调节：Group Members 到下面第一个人的距离，可以改成 4rem, 8rem, 10rem 等 */
 }
 
 .people .group-photo {
