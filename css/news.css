@@ -1,4 +1,7 @@
-
+/* 确保导航栏对齐一致 */
+.navbar .wrapper {
+    padding: 0 1.5rem;
+}
 
 .news {
     padding: 6rem 0;
