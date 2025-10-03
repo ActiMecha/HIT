@@ -617,8 +617,8 @@ body {
 
 /* 引用文字样式 */
 .quote-section {
-    padding-top: 2rem;  /* Group Members 到引用文字的间距，可调整 */
-    padding-bottom: 3rem;  /* 引用文字到下方成员的间距，可调整 */
+    padding-top: 1.5rem;  /* Group Members 到引用文字的间距，可调整 */
+    padding-bottom: 1rem;  /* 引用文字到下方成员的间距，可调整 */
     text-align: center;
 }
 
