@@ -132,8 +132,7 @@ img {
 }
 
 .navbar .logo h1 {
-    font-size: 1.465rem;
-    font-size: 18px;
+    font-size: 1.5rem;  /* 放大了，原来是 18px，现在约 24px */
     font-weight: 600;
     color: rgba(255, 255, 255, 0.93);
 }
@@ -152,11 +151,9 @@ img {
 }
 
 .navbar .nav a {
-    font-size: 1.465rem;
-    font-size: 18px;
+    font-size: 1.5rem;  /* 放大了，原来是 18px，现在约 20px，可调整 */
     font-weight: 600;
     color: rgba(255, 255, 255, 0.93);
-    line-height: 1.75rem;
     line-height: 48px;
     transition: all 0.3s ease;
 }
