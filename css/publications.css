@@ -470,106 +470,45 @@
 }
 
 /* 年份导航样式 */
-.publications .wrapper {
-    position: relative;
-    display: flex;
-    gap: 2rem;
-}
-
 .year-nav {
-    position: sticky;
-    top: 120px;  /* 距离顶部的距离，可调整 */
-    align-self: flex-start;
-    min-width: 140px;  /* 导航栏宽度，可调整 */
-    max-height: calc(100vh - 140px);
-    background: #1a1a1a;  /* 黑色背景 */
-    padding: 1.5rem 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    order: 2;  /* 放在右侧 */
-}
-
-.year-nav h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 0 0 1rem 0;
-    color: #fff;  /* 白色文字 */
-    text-align: center;
-}
-
-.year-nav ul {
-    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;  /* 年份之间的间距，可调整 */
+    margin-bottom: 2rem;  /* 与下方内容的间距，可调整 */
     padding: 0;
-    margin: 0;
-}
-
-.year-nav li {
-    margin-bottom: 0.5rem;
-}
-
-.year-nav li:last-child {
-    margin-bottom: 0;
 }
 
 .year-nav a {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #ccc;  /* 浅灰色文字 */
+    color: #000;  /* 黑色数字 */
     text-decoration: none;
-    border-radius: 4px;
+    font-size: 1.25rem;  /* 字体大小，可调整 */
+    font-weight: 600;
     transition: all 0.3s;
-    font-weight: 500;
-    text-align: center;
 }
 
 .year-nav a:hover {
-    background: #333;  /* 深灰色悬停背景 */
-    color: #fff;  /* 白色文字 */
-}
-
-.year-nav a.active {
-    background: #444;  /* 激活状态背景 */
-    color: #fff;
-}
-
-.publications-content {
-    flex: 1;
-    min-width: 0;  /* 防止内容溢出 */
-    order: 1;  /* 放在左侧 */
+    color: #555;  /* 悬停时深灰色 */
+    text-decoration: underline;
 }
 
 /* 移动端样式 */
 @media (max-width: 768px) {
-    .publications .wrapper {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
     .year-nav {
-        position: static;
-        min-width: auto;
-        max-height: none;
-        order: 0;  /* 移动端放在顶部 */
-    }
-
-    .year-nav h3 {
-        font-size: 1rem;
-        margin-bottom: 0.75rem;
-    }
-
-    .year-nav ul {
-        display: flex;
+        gap: 1rem;
         flex-wrap: wrap;
-        gap: 0.5rem;
-        justify-content: center;
-    }
-
-    .year-nav li {
-        margin-bottom: 0;
     }
 
     .year-nav a {
-        padding: 0.4rem 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .year-nav {
+        gap: 0.75rem;
+    }
+
+    .year-nav a {
         font-size: 0.875rem;
     }
 }
