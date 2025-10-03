@@ -354,3 +354,33 @@ body {
     }
 }
 
+/* Quote section styles */
+.quote {
+    padding: 4rem 0;  /* 上下间距 */
+    background-color: #f8f9fa;  /* 可选：浅色背景 */
+}
+
+.quote .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.quote-text {
+    font-size: 1.25rem;  /* 字体大小，可调整 */
+    line-height: 2;  /* 行高 */
+    text-align: center;  /* 居中对齐 */
+    color: #555;  /* 文字颜色 */
+    font-style: italic;  /* 斜体 */
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .quote {
+        padding: 3rem 0;  /* 移动端减小间距 */
+    }
+
+    .quote-text {
+        font-size: 1rem;  /* 移动端字体缩小 */
+    }
+}
